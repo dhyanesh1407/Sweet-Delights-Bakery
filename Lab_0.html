@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sweet Delights Bakery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        #header {
+            background-color: #ff9999;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            margin-bottom: 20px;
+        }
+        #main-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #ff9999;
+            color: white;
+        }
+        .highlight {
+            color: #ff6666;
+            font-weight: bold;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        input[type="text"], input[type="password"], input[type="tel"], select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #ff9999;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #ff6666;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Sweet Delights Bakery</h1>
+        <h7><i>^..^  Taste of Love  ^..^</i></h7>
+    </div>
+    
+    <div id="main-content">
+        <h2>Welcome to Sweet Delights!</h2>
+        
+        <p>At <span class="highlight">Sweet Delights Bakery</span>,We aspire to spread happiness through our mouthwatering baked goodies. Delicious sweets that will satiate your sweet desire are created by our enthusiastic bakers using only the best ingredients.</p>
+        
+        <h3>Our Specialties:</h3>
+        <ul>
+            <li>Breads</li>
+            <li>Cakes</li>
+            <li>Pastries</li>
+            <li>Choco Cookies</li>
+        </ul>
+        
+        <p><i>Come smell the aromas of our freshly baked items and our kind welcome when you visit our bakery.</i><p>
+
+        
+        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a" alt="Pastries">
+        
+        <h3>Our Locations</h3>
+        <table>
+            <tr>
+                <th>Location</th>
+                <th>Address</th>
+                <th>Phone</th>
+            </tr>
+            <tr>
+                <td>Downtown </td>
+                <td>123 Main St, Denton</td>
+                <td>+1 940-536-4688</td>
+            </tr>
+            <tr>
+                <td>Uptown</td>
+                <td>456 Park Ave, Denton</td>
+                <td>+1 940-536-4699</td>
+            </tr>
+        </table>
+        
+        <p>Can't make it to our stores? You can order online at <a href="https://www.sweetdelightsbakery.com">www.sweetdelightsbakery.com</a></p>
+        
+        <h3>Join Our Sweet Community!</h3>
+        <p><i>Sign up to be a part of our communuty to receive special offers and updates:</i></p>
+        
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br>
+            
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address"><br>
+            
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone"><br>
+            
+            <label for="favorite">Favorite Treat:</label><br>
+            <select id="favorite" name="favorite">
+                <option value="bread">Bread</option>
+                <option value="cake">Cake</option>
+                <option value="pastry">Pastry</option>
+                <option value="cookie">Cookie</option>
+            </select><br>
+            
+            <p>How often do you visit bakeries?</p>
+            <input type="radio" id="daily" name="frequency" value="daily">
+            <label for="daily">Daily</label><br>
+            <input type="radio" id="weekly" name="frequency" value="weekly" checked>
+            <label for="weekly">Weekly</label><br>
+            <input type="radio" id="monthly" name="frequency" value="monthly">
+            <label for="monthly">Monthly</label><br>
+            
+            <p>What types of baked goods do you enjoy? (Check all that apply)</p>
+            <input type="checkbox" id="sweet" name="preference" value="sweet">
+            <label for="sweet">Sweet</label><br>
+            <input type="checkbox" id="savory" name="preference" value="savory">
+            <label for="savory">Savory</label><br>
+            <input type="checkbox" id="gluten-free" name="preference" value="gluten-free">
+            <label for="gluten-free">Gluten-Free</label><br>
+            
+            <input type="submit" value="Subscribe">
+        </form>
+    </div>
+</body>
+</html>
